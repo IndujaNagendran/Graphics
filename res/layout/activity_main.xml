@@ -15,7 +15,7 @@
         android:text="" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/li"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView1"
@@ -24,46 +24,48 @@
         android:text="Line" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/sq"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/button1"
+        android:layout_below="@+id/li"
         android:layout_marginTop="26dp"
         android:text="Square" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/ar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_below="@+id/button3"
-        android:layout_marginTop="21dp"
-        android:text="Circle" />
+        android:layout_alignBaseline="@+id/li"
+        android:layout_alignBottom="@+id/li"
+        android:layout_alignLeft="@+id/ov"
+        android:text="Arc" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/ov"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button5"
-        android:layout_alignBottom="@+id/button5"
+        android:layout_alignBaseline="@+id/sq"
+        android:layout_alignBottom="@+id/sq"
         android:layout_centerHorizontal="true"
         android:text="Oval" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/re"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button3"
-        android:layout_alignLeft="@+id/button6"
-        android:text="Arc" />
+        android:layout_alignBaseline="@+id/ci"
+        android:layout_alignBottom="@+id/ci"
+        android:layout_alignLeft="@+id/ov"
+        android:text="Rectangle" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/ci"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button5"
-        android:layout_alignLeft="@+id/button6"
-        android:text="Rectangle" />
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sq"
+        android:layout_marginTop="18dp"
+        android:text="Circle" />
 
 </RelativeLayout>
